@@ -19,6 +19,11 @@ function animate(){
 animate();
 
 window.addEventListener('keydown', function(e){
-    console.log(e.code)
+    if (e.code === 'Space') spacePressed = true;
 
-})
+});
+        window.addEventListener('keyup', function(e){
+      if (e.code === 'Space') spacePressed = false;
+        });
+
+   
